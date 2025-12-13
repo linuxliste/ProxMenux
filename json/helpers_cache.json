@@ -829,7 +829,7 @@
     "script": "ct/coolify.sh",
     "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/coolify.sh",
     "categories": [
-      6
+      3
     ],
     "notes": [
       "Initial setup will be done via the web interface on first access.",
@@ -1140,7 +1140,7 @@
     "script": "ct/dokploy.sh",
     "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/dokploy.sh",
     "categories": [
-      6
+      3
     ],
     "notes": [
       "Initial setup will be done via the web interface on first access.",
