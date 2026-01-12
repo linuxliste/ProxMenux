@@ -202,16 +202,16 @@
     "type": "ct"
   },
   {
-    "name": "Apache-CouchDB",
+    "name": "Apache CouchDB",
     "slug": "apache-couchdb",
-    "desc": "Apache-CouchDB Seamless multi-master sync, that scales from Big Data to Mobile, with an Intuitive HTTP/JSON API and designed for Reliability.",
+    "desc": "Apache CouchDB Seamless multi-master sync, that scales from Big Data to Mobile, with an Intuitive HTTP/JSON API and designed for Reliability.",
     "script": "ct/apache-couchdb.sh",
     "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/apache-couchdb.sh",
     "categories": [
       8
     ],
     "notes": [
-      "Show Login Credentials: `cat CouchDB.creds`"
+      "Login Credentials: `cat ~/couchdb.creds`"
     ],
     "type": "ct"
   },
