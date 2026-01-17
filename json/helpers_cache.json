@@ -216,36 +216,6 @@
     "type": "ct"
   },
   {
-    "name": "Apache Guacamole",
-    "slug": "apache-guacamole",
-    "desc": "Apache Guacamole is a clientless remote desktop gateway. It supports standard protocols like VNC, RDP, and SSH.",
-    "script": "ct/apache-guacamole.sh",
-    "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/apache-guacamole.sh",
-    "categories": [
-      0
-    ],
-    "notes": [],
-    "type": "ct",
-    "default_credentials": {
-      "username": "guacadmin",
-      "password": "guacadmin"
-    }
-  },
-  {
-    "name": "Apache Tika",
-    "slug": "apache-tika",
-    "desc": "The Apache Tika\u2122 toolkit detects and extracts metadata and text from over a thousand different file types (such as PPT, XLS, and PDF). All of these file types can be parsed through a single interface, making Tika useful for search engine indexing, content analysis, translation, and much more.",
-    "script": "ct/apache-tika.sh",
-    "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/apache-tika.sh",
-    "categories": [
-      12
-    ],
-    "notes": [
-      "Configuration file is not created at install time. Example is at: `https://cwiki.apache.org/confluence/display/TIKA/TikaServer+in+Tika+2.x`"
-    ],
-    "type": "ct"
-  },
-  {
     "name": "Apache Tomcat",
     "slug": "apache-tomcat",
     "desc": "Apache Tomcat is an open-source application server that runs Java Servlets and JavaServer Pages (JSP). It allows developers to deploy and manage Java web applications by handling HTTP requests and serving dynamic content. Tomcat is widely used for lightweight web applications and supports various Java EE features like WebSockets and JNDI.",
