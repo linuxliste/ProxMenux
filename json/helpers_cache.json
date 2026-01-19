@@ -849,7 +849,8 @@
       11
     ],
     "notes": [
-      "Execute within the Proxmox shell or in LXC"
+      "Execute within the Proxmox shell or in LXC",
+      "Update with: update_copyparty"
     ],
     "type": "addon"
   },
@@ -1906,8 +1907,7 @@
       4
     ],
     "notes": [
-      "Default credentials: `cat /root/hev.creds`",
-      "Config stored at `/etc/hev-socks5-server/main.yml`"
+      "Default credentials: `cat /root/hev.creds`"
     ],
     "type": "ct"
   },
@@ -4092,22 +4092,6 @@
     "default_credentials": {
       "username": "admin",
       "password": "changeme"
-    }
-  },
-  {
-    "name": "phpIPAM",
-    "slug": "phpipam",
-    "desc": "phpipam is an open-source web IP address management application (IPAM). Its goal is to provide light, modern and useful IP address management.",
-    "script": "ct/phpipam.sh",
-    "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/phpipam.sh",
-    "categories": [
-      4
-    ],
-    "notes": [],
-    "type": "ct",
-    "default_credentials": {
-      "username": "Admin",
-      "password": "ipamadmin"
     }
   },
   {
