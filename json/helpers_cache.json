@@ -2510,6 +2510,18 @@
     }
   },
   {
+    "name": "KitchenOwl",
+    "slug": "kitchenowl",
+    "desc": "KitchenOwl is a smart self-hosted grocery list and recipe manager with real-time synchronization, recipe management, meal planning, and expense tracking.",
+    "script": "ct/kitchenowl.sh",
+    "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/kitchenowl.sh",
+    "categories": [
+      13
+    ],
+    "notes": [],
+    "type": "ct"
+  },
+  {
     "name": "Koel",
     "slug": "koel",
     "desc": "Koel is a simple web-based personal audio streaming service written in Vue and Laravel. It supports multiple users, audio visualization, smart playlists, YouTube integration, and Last.fm scrobbling.",
@@ -4934,6 +4946,20 @@
     "type": "ct"
   },
   {
+    "name": "RustyPaste",
+    "slug": "rustypaste",
+    "desc": "Rustypaste is a minimal file upload/pastebin service.",
+    "script": "ct/rustypaste.sh",
+    "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/rustypaste.sh",
+    "categories": [
+      11
+    ],
+    "notes": [
+      "When updating the script it will backup the whole project including all the uploaded files, make sure to extract it to a safe location or remove"
+    ],
+    "type": "ct"
+  },
+  {
     "name": "SABnzbd",
     "slug": "sabnzbd",
     "desc": "SABnzbd is a free, open-source software program for downloading binary files from Usenet newsgroups. It is designed to be easy to use, and provides a number of features to simplify the downloading process, such as automatic error detection and repair, download scheduling, and integration with other applications. SABnzbd is a binary newsreader, which means it is specifically designed for downloading binary files, such as images, music, and video, from Usenet newsgroups. With its user-friendly interface and powerful features, SABnzbd makes it easy to manage your Usenet downloads and keep your download queue organized.",
@@ -4982,7 +5008,7 @@
     ],
     "notes": [
       "To configure the integrated daemon after install is complete, use the `Create Daemon` menu in the UI and follow the instructions",
-      "The integrated daemon config is located at `/root/.config/daemon/config.json`"
+      "The integrated daemon config is located at `/root/.config/daemon/`"
     ],
     "type": "ct"
   },
