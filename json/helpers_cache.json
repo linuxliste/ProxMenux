@@ -3787,6 +3787,30 @@
     "type": "ct"
   },
   {
+    "name": "OpenCloud",
+    "slug": "opencloud",
+    "desc": "OpenCloud is the file sharing and collaboration solution of the Heinlein Group. Through intelligent file management and a strong open source community, files become valuable resources, effectively structured and usable in the long term. With flexible data rooms and intelligent access rights, teams can access and work together on data anytime, anywhere without barriers, but with a lot of productivity.",
+    "script": "ct/opencloud.sh",
+    "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/opencloud.sh",
+    "categories": [
+      11
+    ],
+    "notes": [
+      "Valid TLS certificates and fully-qualified domain names behind a reverse proxy (Caddy) for 3 services - OpenCloud, Collabora, and WOPI are **REQUIRED**",
+      "Forgot your admin password? Check `admin_password` in the 'idm' section in `/etc/opencloud/opencloud.yaml`",
+      "**Optional External Apps**: extract zip archives from App Store to `/etc/opencloud/assets/apps`",
+      "**Optional CalDAV and CardDAV**: requires separate Radicale install. Edit and rename `/opt/opencloud/proxy.yaml.bak` and change your Radicale config to use `http_x_remote_user` as the auth method",
+      "**Optional OpenID**: Authelia and PocketID supported. Uncomment relevant lines in `/opt/opencloud/opencloud.env` and consult OpenCloud GitHub discussions for configuration tips",
+      "**Optional Full-text Search with Apache Tika**: requires your own Tika LXC. See `https://community-scripts.github.io/ProxmoxVE/scripts?id=apache-tika`",
+      "**Relevant services**: `opencloud.service`, `opencloud-wopi.service`, `coolwsd.service`"
+    ],
+    "type": "ct",
+    "default_credentials": {
+      "username": "admin",
+      "password": "randomly generated during the installation process"
+    }
+  },
+  {
     "name": "Opengist",
     "slug": "opengist",
     "desc": "Self-hosted pastebin powered by Git, open-source alternative to Github Gist.",
