@@ -3447,6 +3447,26 @@
     }
   },
   {
+    "name": "Nginx UI",
+    "slug": "nginx-ui",
+    "desc": "Nginx UI is a comprehensive web-based interface designed to simplify the management and configuration of Nginx servers. It provides features like online statistics, ChatGPT-powered config assistant, automatic Let's Encrypt certificates, and config file editing with syntax highlighting.",
+    "script": "ct/nginx-ui.sh",
+    "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/nginx-ui.sh",
+    "categories": [
+      21
+    ],
+    "notes": [
+      "Nginx runs on ports 80/443, Nginx UI management interface on port 9000.",
+      "SSL certificates can be managed automatically with Let's Encrypt integration.",
+      "Initial Login data: `cat ~/nginx-ui.creds`"
+    ],
+    "type": "ct",
+    "default_credentials": {
+      "username": "admin",
+      "password": null
+    }
+  },
+  {
     "name": "Nginx Proxy Manager",
     "slug": "nginxproxymanager",
     "desc": "Nginx Proxy Manager is a tool that provides a web-based interface to manage Nginx reverse proxies. It enables users to easily and securely expose their services to the internet by providing features such as HTTPS encryption, domain mapping, and access control. It eliminates the need for manual configuration of Nginx reverse proxies, making it easy for users to quickly and securely expose their services to the public.",
@@ -5311,6 +5331,23 @@
       "If you choose not to run the installation setup, execute: `/opt/mssql/bin/mssql-conf setup` in LXC shell.",
       "You can setup the admin account 'SA' during installation",
       "Make sure you disable the SA account if you intend to use this in production!"
+    ],
+    "type": "ct"
+  },
+  {
+    "name": "SQL Server 2025",
+    "slug": "sqlserver2025",
+    "desc": "Script to automatically set up a SQL Server 2025 installation with Ubuntu 24.04 support.",
+    "script": "ct/sqlserver2025.sh",
+    "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/sqlserver2025.sh",
+    "categories": [
+      8
+    ],
+    "notes": [
+      "If you choose not to run the installation setup, execute: `/opt/mssql/bin/mssql-conf setup` in LXC shell.",
+      "You can setup the admin account 'SA' during installation",
+      "Make sure you disable the SA account if you intend to use this in production!",
+      "Ubuntu 24.04 support requires SQL Server 2025 CU1 or later"
     ],
     "type": "ct"
   },
