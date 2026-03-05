@@ -490,18 +490,6 @@
     "type": "ct"
   },
   {
-    "name": "BentoPDF",
-    "slug": "bentopdf",
-    "desc": "A privacy-first, 100% client-side PDF Toolkit. No signups/accounts, works in the browser, online or offline.",
-    "script": "ct/bentopdf.sh",
-    "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/bentopdf.sh",
-    "categories": [
-      12
-    ],
-    "notes": [],
-    "type": "ct"
-  },
-  {
     "name": "Beszel",
     "slug": "beszel",
     "desc": "A lightweight server monitoring platform that provides Docker statistics, historical data, and alert functions\n    ",
