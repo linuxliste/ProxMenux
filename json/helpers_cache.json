@@ -490,6 +490,18 @@
     "type": "ct"
   },
   {
+    "name": "BentoPDF",
+    "slug": "bentopdf",
+    "desc": "A privacy-first, 100% client-side PDF Toolkit. No signups/accounts, works in the browser, online or offline.",
+    "script": "ct/bentopdf.sh",
+    "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/bentopdf.sh",
+    "categories": [
+      12
+    ],
+    "notes": [],
+    "type": "ct"
+  },
+  {
     "name": "Beszel",
     "slug": "beszel",
     "desc": "A lightweight server monitoring platform that provides Docker statistics, historical data, and alert functions\n    ",
@@ -4241,6 +4253,24 @@
       "Show Login Credentials, type `cat ~/paperless-ngx.creds` in the LXC console",
       "Script installs English as default OCR language. To install additional languages, use `apt-get install tesseract-ocr-[lang]`, where [lang] is the language code (e.g. `apt-get install tesseract-ocr-deu`).",
       "Paperless-NGX use uv, so all calls need to start with `uv run` f.e. `uv run python3 manage.py document_exporter $path` instead `python3 manage.py`"
+    ],
+    "type": "ct"
+  },
+  {
+    "name": "Papra",
+    "slug": "papra",
+    "desc": "Papra is a modern, self-hosted document management system with full-text search, OCR support, and automatic document processing. Built with Node.js and featuring a clean web interface for organizing and managing your documents.",
+    "script": "ct/papra.sh",
+    "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/papra.sh",
+    "categories": [
+      12
+    ],
+    "notes": [
+      "First visit will prompt you to create an account",
+      "Tesseract OCR is pre-installed for all languages",
+      "Documents are stored in /opt/papra/app-data/documents",
+      "Ingestion folder available at /opt/papra/ingestion for automatic document import",
+      "Email functionality runs in dry-run mode by default"
     ],
     "type": "ct"
   },
